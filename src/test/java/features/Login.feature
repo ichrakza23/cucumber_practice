@@ -34,7 +34,7 @@ Feature: Application Login
     Then Home page is populated
     And Cards are displayed "false"
     
-     @tag3
+     @SmokeTest
   Scenario: Home page default login
     Given User is on NetBanking landing page
     When User sign up with following details
@@ -42,7 +42,7 @@ Feature: Application Login
     Then Home page is populated
     And Cards are displayed "false"
     
-    @tag4
+    @RegTest
   Scenario Outline: Home page default login
     Given User is on NetBanking landing page
     When User login into application with <Username> and password <password>
