@@ -35,12 +35,14 @@ Feature: Application Login
     And Cards are displayed "false"
     
      @SmokeTest
+     @MobileTest
   Scenario: Home page default login
     Given User is on NetBanking landing page
     When User sign up with following details
     | jenny | abcd | john@abs.com |Australia | 3432111|
     Then Home page is populated
     And Cards are displayed "false"
+ 
     
     @RegTest
   Scenario Outline: Home page default login
